@@ -20,7 +20,16 @@
           <li><a  :class="searchTabIndex==3?'active':''" data-value="3" v-on:click="switchSearchTab">商铺</a></li>
           <li><a  :class="searchTabIndex==4?'active':''" data-value="4" v-on:click="switchSearchTab">论坛</a></li>
         </ul>
+        <input type="text" />
+        <a  class="industry_header_search_btn">
+          <img src="../../assets/search_icon.png" />
+        </a>
 
+      </div>
+
+      <div class="buycar">
+        <a>购物车</a>
+        <span>1</span>
       </div>
 
     </div>
@@ -53,8 +62,8 @@
   }
 
 </script>
-<style>
-
+<style  lang="less">
+@import "../../style/publiccss.less";
 .Homehand{
   font-size: 12px;
   width: 100%;
@@ -98,6 +107,94 @@ float: left;
     height: 97px;
     margin-top: 26px;
   }
+.industry_header_search_tab{
+  width: 200px;
+  height: 25px;
+  overflow: hidden;
+
+}
+.industry_header_search_box{
+
+  width: 560px;
+  height: 60px;
+  margin-top: 23px;
+  float: left;
+  margin-left: 60px;
+
+    input{
+      width: 480px;
+      height: 35px;
+      border: 1px solid  @red-color;
+      float: left;
+    }
+    a img{
+      margin: 7px 10px;
+      width: 22px;
+      height: 22px;
+
+    }
+}
+  .industry_header_search_tab li a{
+    display: block;
+    width: 50px;
+    height: 25px;
+    color: @red-color;
+    text-align: center;
+    line-height: 25px;
+    background-color:@white-color;
+    font-size: @fontsize12;
+
+    cursor: pointer;
+  }
+.industry_header_search_tab li  .active{
+
+  background-color:#f10215;
+  color: @white-color;
+}
+.industry_header_search_btn{
+  float: left;
+  width: 52px;
+  height: 37px;
+  background: @red-color;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  margin-left: -4px;
+
+}
+.buycar{
+
+      width: 190px;
+      height: 35px;
+      float: left;
+      border: 1px #e3e4e5  solid;
+      font-size: @fontsize12;
+      margin-top: 49px;
+      margin-left: 100px;
+
+      text-align: center;
+      line-height: 35px;
+      background: url(../../assets/images/industry_header_cart_icon.jpg) 40px 0 no-repeat;
+      background-size: 23px 33px;
+      a{
+      width: 59px;
+        margin: 0 auto;
+        display: inline-block;
+
+
+
+      }
+      span{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color:#f10215;
+        color: #fff;
+        line-height: 15px;
+
+      }
+
+}
 
 
 </style>
