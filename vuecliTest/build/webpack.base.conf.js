@@ -43,8 +43,8 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        // loader: 'style-loader!css-loader!less-loader',
-        use: [style-loader,css-loader,less-loader]
+        loader: 'style-loader!css-loader!less-loader',
+        // use: [style-loader,css-loader,less-loader]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
