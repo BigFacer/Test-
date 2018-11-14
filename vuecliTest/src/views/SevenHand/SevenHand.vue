@@ -97,11 +97,11 @@
       },
       inimg:function () {
          this.isdown=true;
-         consle.info(this.isdown)
+
       },
       outimg:function () {
           this.isdown=false;
-        consle.info(this.isdown)
+
 
       }
 
