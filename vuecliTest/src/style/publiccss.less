@@ -64,6 +64,7 @@
 @order-product-bg: #fafafa;
 @order-orange-status: #faa02d;
 @pop_bg: rgba(0, 0, 0, 0.8);
+@orangeColor:#FAA02D;
 
 
 html{@fontsize12;}
@@ -74,7 +75,7 @@ html{@fontsize12;}
 *{
 
   margin: 0;padding: 0;
-  border-box: box-sizing
+ box-sizing: border-box;
 }
 ul li{
   list-style: none;
@@ -84,3 +85,15 @@ a{
   display: block;
   text-decoration: none;
 }
+/deep/.el-carousel__indicator .el-carousel__button{
+  width: 10px;
+  height: 10px;
+  background: #FFF;
+  opacity: 1;
+  border-radius: 50%;
+}
+.goodsleft ul{width: 100%;cursor: pointer;height: 55px;
+  overflow: hidden;}
+.goodsleft ul li{display:inline-block;text-align: center;}
+.goodsleft ul li:first-child{width:85px;}
+.goodsleft ul li:nth-child(2){width:75px;color:@orangeColor;    line-height: 55px;}
