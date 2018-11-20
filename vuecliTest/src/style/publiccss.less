@@ -3,12 +3,11 @@
 @fontsize13:13px;
 @fontsize14:14px;
 @fontsize15:15px;
-@fontsize15:16px;
-@fontsize15:18px;
-@fontsize15:20px;
-@fontsize15:20px;
-@fontsize15:26px;
-@fontsize15:28px;
+@fontsize16:16px;
+@fontsize18:18px;
+@fontsize20:20px;
+@fontsize26:26px;
+@fontsize28:28px;
 @font-color:#333;
 @light-gray: #ececec;
 @red-color: #f10215;
@@ -64,7 +63,12 @@
 @order-product-bg: #fafafa;
 @order-orange-status: #faa02d;
 @pop_bg: rgba(0, 0, 0, 0.8);
+@borderColor:#e3e4e5;
+@fontColor:#333;
+@redColor:#f10215;
 @orangeColor:#FAA02D;
+@greyColor:#5f5f5f;
+
 
 
 html{@fontsize12;}
@@ -97,3 +101,28 @@ a{
 .goodsleft ul li{display:inline-block;text-align: center;}
 .goodsleft ul li:first-child{width:85px;}
 .goodsleft ul li:nth-child(2){width:75px;color:@orangeColor;    line-height: 55px;}
+.swiper-button-prev{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: url("../assets/images/left_arr.jpg")no-repeat center;
+
+
+}
+.swiper-button-next{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: url("../assets/images/right_arr.jpg")no-repeat center;
+}
+.icolors-purchase-box-company{position: relative; margin-top: 5px;width:390px;height:95px;padding: 10px 15px;border:1px solid @borderColor;display: inline-block;}
+.icolors-purchase-box-company div{float: left;}
+.index_offering{position: absolute;    top: -5px;right: -4px;}
+.purchase-box-company-title{font-size: @fontsize16;font-weight: 600;text-align: left;}
+.purchase-box-company-num{font-size: @fontsize13;color:@greyColor;margin:10px 0;    width: 215px;white-space:nowrap;
+  text-overflow: ellipsis;overflow: hidden;    text-align: left;}
+.purchase-box-company-time{font-size: @fontsize14;color:@greyColor;text-align: left;}
+.purchase-box-company-time b{color:@orangeColor;font-weight: normal;}
+.purchase-box-company-btn{cursor: pointer;width:110px;height:35px;line-height:35px;text-align:center;border:1px solid @redColor;font-size: @fontsize14;color: @redColor;}
+.purchase-box-company-has{font-size: @fontsize14;margin-top:15px;}
+.purchase-box-company-has b{color:@orangeColor;font-weight: normal;}

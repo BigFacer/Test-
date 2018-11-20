@@ -175,7 +175,7 @@
       float: left;
     }
     a img{
-      margin: 7px 10px;
+      margin: 7px 13px;
       width: 22px;
       height: 22px;
 
@@ -200,7 +200,7 @@
 .industry_header_search_btn{
   float: left;
   width: 52px;
-  height: 37px;
+  height: 35px;
   background: @red-color;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
